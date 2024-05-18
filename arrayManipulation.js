@@ -10,19 +10,3 @@ function processArray( numbers ) {
      })
     }
 
-    function formatArrayStrings( strings, numbers) {
-        if (strings.length !== numbers.length) {
-            throw new Error('string length and number length must be the same');
-        }
-        return strings.map(( strings,index ) => {
-            const num = numbers[ index];
-            if (num % 2 == 0) { 
-                return strings.toUppercase();
-                
-            } else {
-                return strings.toLowercase()
-                
-            }
-        })
-        
-    }
